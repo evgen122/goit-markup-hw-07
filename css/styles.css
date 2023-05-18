@@ -23,9 +23,6 @@ body {
   --color-madel: #fcfcfc;
   --color-form-check: #2e2f4266;
   --color-shadow: #00000026;
-
-  /*   --header-idx: 10;
-  --modal-idx: 100; */
 }
 
 .list {
@@ -402,37 +399,113 @@ p {
   |============================
 */
 .advantages {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* Basic styles */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
-.title-adv {
-  margin-bottom: 8px;
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
+  .advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
+
+/* .title-adv {
+  margin-bottom: 8px;
+} */
 
 .advantages .text-margin {
 }
 
 .list-about {
+  /* Basic styles */
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px 24px;
 }
 
 .list-about-item {
-  width: calc((100% - 3 * 24px) / 4);
+  /* Basic styles */
+  width: 100%;
+  /*   */
+}
+
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+  .list-about-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
+  .list-about-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
 }
 
 .advantages-icon-area {
-  display: flex;
-  height: 112px;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-advand-card-background);
-  border-radius: 4px;
-  margin-bottom: 8px;
+  /* Basic styles */
+  display: none;
+  /*   */
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
+  .advantages-icon-area {
+    display: flex;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-advand-card-background);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
 }
 
 .advantages-icon {
+}
+.title-adv {
+  /* Basic styles */
+
+  margin-bottom: 8px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-logo-ligt);
+}
+
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+  .title-adv {
+    text-align: start;
+  }
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
+  .title-adv {
+    /* Basic styles */
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+/* Basic styles */
+
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
 }
 
 /**
