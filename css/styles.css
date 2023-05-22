@@ -570,8 +570,25 @@ p {
 }
 
 .collaborator-block {
+  /* Basic styles */
+
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px 24px;
+  /*   row-gap: 24px;
+  column-gap: 72px; */
+}
+
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+  .collaborator-block {
+    row-gap: 64px;
+  }
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
 }
 
 .card {
