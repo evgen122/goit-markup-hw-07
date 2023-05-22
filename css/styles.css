@@ -467,6 +467,7 @@ p {
 
 .advantages-icon {
 }
+
 .title-adv {
   /* Basic styles */
 
@@ -498,7 +499,15 @@ p {
   }
 }
 
-/* Basic styles */
+/**
+  |============================
+  | SECTION_3_WE_DOING
+  |============================
+*/
+.wedoing {
+  /* Basic styles */
+  display: none;
+}
 
 /* Tablet screen >= 768 */
 @media only screen and (min-width: 768px) {
@@ -506,15 +515,10 @@ p {
 
 /* Desktop screen >= 1158 */
 @media only screen and (min-width: 1158px) {
-}
-
-/**
-  |============================
-  | SECTION_3_WE_DOING
-  |============================
-*/
-.wedoing {
-  padding-bottom: 120px;
+  .wedoing {
+    display: block;
+    padding-bottom: 120px;
+  }
 }
 
 .title-wedoing {
@@ -543,9 +547,22 @@ p {
   |============================
 */
 .collaborator {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* Basic styles */
+  padding: 96px 0;
+  /*   padding-top: 120px;
+  padding-bottom: 120px; */
   background-color: var(--color-logo-dark);
+}
+
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
+  .collaborator {
+    padding: 120px 0;
+  }
 }
 
 .title-col {
