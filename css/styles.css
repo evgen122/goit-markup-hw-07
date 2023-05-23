@@ -776,7 +776,9 @@ p {
   /* Basic styles */
 
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+  justify-content: center;
 
   /*   justify-content: flex-start;
   align-items: baseline; */
@@ -787,13 +789,13 @@ p {
 
 /* Tablet screen >= 768 */
 @media only screen and (min-width: 768px) {
-  .footer > .container {
-    flex-direction: row;
-  }
 }
 
 /* Desktop screen >= 1158 */
 @media only screen and (min-width: 1158px) {
+  .footer > .container {
+    /* flex-wrap: nowrap; */
+  }
 }
 
 .footer-text {
@@ -803,14 +805,14 @@ p {
 /* Tablet screen >= 768 */
 @media only screen and (min-width: 768px) {
   .footer-text {
-    margin-right: 24px;
+    /* margin-right: 24px; */
   }
 }
 
 /* Desktop screen >= 1158 */
 @media only screen and (min-width: 1158px) {
   .footer-text {
-    margin-right: 120px;
+    margin-right: 96px;
   }
 }
 
@@ -856,10 +858,23 @@ p {
 }
 
 .footer-social > .text-background-dark {
+  /* Basic styles */
+  text-align: center;
   margin-bottom: 16px;
 
   font-weight: 500;
   color: var(--color-wite);
+}
+
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+  .footer-social > .text-background-dark {
+    text-align: start;
+  }
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
 }
 
 .footer-icon-list {
@@ -895,7 +910,17 @@ p {
 }
 
 .footer-subscribe {
-  margin-left: 80px;
+  /* Basic styles */
+
+  /* margin-left: 80px; */
+}
+
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
 }
 
 .footer-subscribe > .text-background-dark {
@@ -903,13 +928,26 @@ p {
 }
 
 .footer-subscribe-form {
-  display: flex;
+  /* Basic styles */
 
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 16px 24px;
+}
+
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
 }
 
 .footer-form-email {
-  width: 264px;
+  /* Basic styles */
+  width: 398px;
   height: 40px;
   padding-left: 16px;
 
@@ -923,9 +961,21 @@ p {
   color: var(--color-wite);
 }
 
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+  .footer-form-email {
+    width: 264px;
+  }
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
+}
+
 .btn-footer {
   /*   position: relative;
  */
+  height: 40px;
   display: flex;
   gap: 16px;
   align-items: center;
