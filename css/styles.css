@@ -107,7 +107,7 @@ p {
 }
 
 .logo {
-  margin-right: 76px;
+  /* Basic styles */
 
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -116,6 +116,20 @@ p {
   color: var(--logo-color-web);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+  .logo {
+    margin-right: 120px;
+  }
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
+  .logo {
+    margin-right: 76px;
+  }
 }
 
 .logo-studio-light {
@@ -139,8 +153,20 @@ p {
 }
 
 .menu {
-  display: flex;
-  gap: 40px;
+  /* Basic styles */
+  display: none;
+}
+
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
 }
 
 .menu-item {
@@ -195,15 +221,46 @@ p {
 }
 
 .address {
-  font-style: normal;
-  gap: 40px;
-  margin-left: auto;
+  /* Basic styles */
+  display: none;
+}
+
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+  .address {
+    /* Basic styles */
+    display: block;
+    font-style: normal;
+    gap: 40px;
+    margin-left: auto;
+  }
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
 }
 
 .menu-contact {
+  /* Basic styles */
   display: flex;
   font-style: normal;
-  gap: 40px;
+  gap: 12px 40px;
+}
+
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+  .menu-contact {
+    /* Basic styles */
+    flex-direction: column;
+  }
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
+  .menu-contact {
+    /* Basic styles */
+    flex-direction: row;
+  }
 }
 
 .menu-contact-list + .menu-contact-list {
@@ -1210,14 +1267,15 @@ p {
 }
 
 .modal {
+  /* Basic styles */
   position: absolute;
   top: calc(50%);
   left: calc(50%);
   transform: translate(-50%, -50%);
 
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
 
-  width: 408px;
+  width: 392px;
   min-height: 576px;
 
   background: var(--color-madel);
@@ -1227,6 +1285,21 @@ p {
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+  .modal {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    width: 408px;
+  }
+}
+
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
+}
+
 .modal-close-btn {
   position: absolute;
   top: 24px;
