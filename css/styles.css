@@ -1679,13 +1679,14 @@ label {
 
 .menu-container .card-block-list {
   /* Basic styles */
-  justify-content: start;
-  gap: 28px;
+  justify-content: space-between;
+  /*   gap: 28px; */
 }
 
 /* Tablet screen >= 428 */
 @media only screen and (min-width: 428px) {
   .menu-container .card-block-list {
+    justify-content: start;
     gap: 56px;
   }
 }
