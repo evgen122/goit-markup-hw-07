@@ -761,7 +761,6 @@ p {
   justify-content: center;
   align-items: center;
 
-  /*  width: 136px; */
   width: calc(190 * (100vw - 14px) / 428);
   height: 88px;
 
