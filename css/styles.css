@@ -761,7 +761,8 @@ p {
   justify-content: center;
   align-items: center;
 
-  width: 136px;
+  /*  width: 136px; */
+  width: calc(190 * (100vw - 14px) / 428);
   height: 88px;
 
   border: 1px solid;
@@ -1355,12 +1356,21 @@ p {
 }
 
 .modal-text {
+  /* Basic styles */
   text-align: center;
 
   font-weight: 500;
-  font-size: 16px;
+  font-size: calc(16 * (100vw - 3px) / (357));
+  /*  font-size: 16px; */
   line-height: 1.5;
   color: var(--color-logo-ligt);
+}
+
+/* Tablet screen >= 357 */
+@media only screen and (min-width: 357px) {
+  .modal-text {
+    font-size: 16px;
+  }
 }
 
 .form-input {
@@ -1491,10 +1501,17 @@ label {
 
 .text-comment {
   font-weight: 400;
-  font-size: 12px;
+  font-size: calc(12 * (100vw - 5px) / (345));
   line-height: 1.16;
 
   color: var(--color-customers-icon);
+}
+
+/* Tablet screen >= 345 */
+@media only screen and (min-width: 345px) {
+  .text-comment {
+    font-size: 12px;
+  }
 }
 
 .modal-link {
